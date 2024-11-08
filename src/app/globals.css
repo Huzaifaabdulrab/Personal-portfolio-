@@ -24,16 +24,9 @@ html{
 }
 
 .box {
-  /* background-color: white;
-  width: 100vh;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;
-  margin-left: 23%;
-  bottom: 30rem;
-  border-radius: 20px; */
   box-shadow: 0 5px 20px  rgba(0, 0, 0, 0.5);
 }
+
 .skills{
   text-shadow: 0 2px 20px rgb(0, 0, 0.5);
 }
