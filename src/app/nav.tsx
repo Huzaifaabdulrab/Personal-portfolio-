@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import Screen from "./screen";
 import Image from "next/image";
 import HAlogo from "../public/Images/HAlogo.jpeg";
 

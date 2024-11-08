@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaGithub, FaBootstrap, FaFigma, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaGithub,FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 export default function ServicesSection() {
     const services = [

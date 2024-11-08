@@ -1,4 +1,3 @@
-import Navbar from "./nav";
 import Screen from "./screen";
 import About from "./about";
 import SkillsArea from "./Skills";

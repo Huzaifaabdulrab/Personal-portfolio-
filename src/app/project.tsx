@@ -1,7 +1,6 @@
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link"; // Import Link from Next.js
-import portfolio from "../public/portfolio.png";
 import WebDevelop from "../public/Images/Web-development.jpg";
 import Bootstrap from "../public/Images/Bootstrap.jpeg";
 import Cli from "../public/Images/Cli.png";

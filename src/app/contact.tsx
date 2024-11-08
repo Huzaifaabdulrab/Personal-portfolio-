@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { FaEnvelope, FaGithub, FaLinkedin, FaTree } from "react-icons/fa";
-
 export default function Contact() {
   return (
     <div id="Contact" className="px-3 py-4 mx-auto">
