@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaGithub, FaBootstrap, FaFigma ,FaReact} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaGithub, FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill , RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 export default function SkillsArea() {
