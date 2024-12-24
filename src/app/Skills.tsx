@@ -1,4 +1,5 @@
 import { FaHtml5, FaCss3, FaJs, FaGithub, FaBootstrap, FaFigma ,FaReact} from "react-icons/fa";
+import { RiTailwindCssFill , RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 export default function SkillsArea() {
   return (
@@ -31,13 +32,13 @@ export default function SkillsArea() {
           width: "80%",
         }, {
           name: "Tailwind CSS",
-          icon: <FaHtml5 />,
+          icon: < RiTailwindCssFill  />,
           percentage: "60%",
           width: "60%",
         },
         {
             name : "Next.js",
-            icon : <FaReact/>,
+            icon : <RiNextjsFill/>,
             percentage:"50%",
             width:"50%"
                 }
@@ -46,11 +47,6 @@ export default function SkillsArea() {
           icon: <FaGithub />,
           percentage: "65%",
           width: "65%",
-        }, {
-          name: "Bootstrap",
-          icon: <FaBootstrap />,
-          percentage: "80%",
-          width: "80%",
         }, {
           name: "UI & UX",
           icon: <FaFigma />,

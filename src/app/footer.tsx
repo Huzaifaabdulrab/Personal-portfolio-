@@ -19,8 +19,8 @@ export default function Footer() {
 
         {/* Quick Links Section */}
         <div className="mb-4 md:mb-0">
-          <h3 className=" text-xl font-semibold text-[#091057] ml-12 text-center">Quick Links</h3>
-          <ul className="space-y-2 mt-2 ml-[4rem] text-center ">
+          <h3 className=" text-xl font-semibold text-[#091057] ml-10 text-center">Quick Links</h3>
+          <ul className="space-y-2 mt-2 ml-[3rem] text-center  ">
             <li><Link href="#Screen" className="hover:text-[#091057]">Home</Link></li>
             <li><Link href="#About" className="hover:text-[#091057]">About</Link></li>
             <li><Link href="#Skills" className="hover:text-[#091057]">Skills</Link></li> 

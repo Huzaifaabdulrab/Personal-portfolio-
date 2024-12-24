@@ -47,7 +47,7 @@ export default function ServicesSection() {
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="bg-[#e8e6e6]  shadow-xl border border-gray-300 rounded-lg p-6 w-80 flex flex-col items-center text-center"
+                        className=" bg-[#e8e6e6]  shadow-xl border border-gray-300 rounded-lg p-6 w-80 flex flex-col items-center text-center"
                     >
                         <div className="text-[#091057] mb-4">{service.icon}</div>
                         <h3 className="text-2xl font-bold text-[#8b8585]">{service.title}</h3>

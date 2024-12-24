@@ -2,7 +2,7 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link"; // Import Link from Next.js
 import WebDevelop from "../public/Images/Web-development.jpg";
-import Bootstrap from "../public/Images/Bootstrap.jpeg";
+import Hackhathon from "../public/Images/hackhathon.png"
 import Cli from "../public/Images/Cli.png";
 
 export default function Project() {
@@ -27,29 +27,28 @@ export default function Project() {
     },
     {
       id: 2,
-      image: Bootstrap,
-      name: "Bootstrap Design",
-      description:
-        "A showcase of responsive designs built with the Bootstrap framework to enhance user experience.",
+      image: Hackhathon,
+      name: "Hackhathon Projects",
+      description:    "Conversion of modern Figma UI designs into responsive websites using Tailwind CSS, HTML, and Next.js.",
       icon: <FaArrowAltCircleDown className="text-[#091057]" />,
-      url: "/bootstrap-design",
+      url: "/hackhathon",
     },
     {
       id: 3,
       image: Cli,
       name: "CLI Tools",
       description:
-        "A suite of command-line tools developed in TypeScript for improving productivity and efficiency.",
+        "A suite of command-line tools developed in TypeScript for improving productivity and efficiency work for TypeScript.",
       icon: <FaArrowAltCircleDown className="text-[#091057]" />,
       url: "/CLI", // Corrected to point to the correct CLI route
     },
   ];
 
   return (
-    <div id="Project" className="py-40 ml-8">
+    <div id="Project" className="py-40 ml-8 mt-[-8%]">
       <div className="mx-auto px-4 md:px-16">
         <h1
-          className="text-[#091057] text-4xl font-bold text-center pb-10"
+          className="text-[#091057] text-4xl font-bold mr-10 text-center pb-10"
           style={{ textShadow: "2px 2px 4px #091057" }}
         >
           Project
