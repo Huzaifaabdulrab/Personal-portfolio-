@@ -1,18 +1,27 @@
+'use client'
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link"; // Import Link from Next.js
 import WebDevelop from "../public/Images/Web-development.jpg";
 import Hackhathon from "../public/Images/hackhathon.png"
 import Cli from "../public/Images/Cli.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Project() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   type project = {
     id: number;
     image: StaticImageData;
     name: string;
     description: string;
     icon: JSX.Element;
-    url: string; // Add URL property for linking
+    url: string; 
+    animation: string;
   };
 
   const projectList: project[] = [
@@ -23,15 +32,17 @@ export default function Project() {
       description:
         "A collection of my web development projects using HTML, CSS, JavaScript, and TypeScript.",
       icon: <FaArrowAltCircleDown className="text-[#091057]" />,
-      url: "/WebProject", // Link to the webProject page
+      url: "/WebProject",
+      animation: "fade-up",
     },
     {
       id: 2,
       image: Hackhathon,
       name: "Hackhathon Projects",
-      description:    "Conversion of modern Figma UI designs into responsive websites using Tailwind CSS, HTML, and Next.js.",
+      description: "Conversion of modern Figma UI designs into responsive websites using Tailwind CSS, HTML, and Next.js.",
       icon: <FaArrowAltCircleDown className="text-[#091057]" />,
       url: "/hackhathon",
+      animation: "fade-left",
     },
     {
       id: 3,
@@ -40,7 +51,8 @@ export default function Project() {
       description:
         "A suite of command-line tools developed in TypeScript for improving productivity and efficiency work for TypeScript.",
       icon: <FaArrowAltCircleDown className="text-[#091057]" />,
-      url: "/CLI", // Corrected to point to the correct CLI route
+      url: "/CLI",
+      animation: "fade-right",
     },
   ];
 
@@ -61,6 +73,7 @@ export default function Project() {
               style={{
                 boxShadow: "0 8px 20px rgba(9, 16, 87, 0.35)",
               }}
+              data-aos={list.animation}
             >
               <div className="w-full flex justify-center rounded-full">
                 <Image

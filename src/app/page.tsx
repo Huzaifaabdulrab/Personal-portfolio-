@@ -5,6 +5,7 @@ import Project from "./project";
 import Contact from "./contact";
 import Footer from "./footer";
 import ServicesSection from "./service";
+import Experience from "./Experience/page";
 export default function Home() {
   return <>
 
@@ -13,6 +14,7 @@ export default function Home() {
 <SkillsArea/>
 <Project/>
 <ServicesSection/>
+<Experience/>
 <Contact/>
 <Footer/>
   </>;

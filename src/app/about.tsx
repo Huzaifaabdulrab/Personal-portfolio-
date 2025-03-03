@@ -59,8 +59,8 @@ export default function About() {
           </h1>
           <p className="flex items-center justify-center  ">
             <FaCode className="mr-2 text-[#091057] " />    <p className="text-[#33343f] ">Coding</p>
-            <FaPaintBrush className="mx-2 text-[#091057]" />
-            <p className="text-[#33343f] ">Painting</p>
+            {/* <FaPaintBrush className="mx-2 text-[#091057]" />
+            <p className="text-[#33343f] ">Painting</p> */}
             <FaProjectDiagram className="mx-2 text-[#091057]" />
             <p className="text-[#33343f] ">Project</p>
             <FaRobot className="mx-2 text-[#091057]" />

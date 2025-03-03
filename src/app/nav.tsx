@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed  bg-white  w-full flex justify-between items-center md:h-14 p-6  shadow-2xl">
+      <div className="fixed  z-20 bg-white  w-full flex justify-between items-center md:h-14 p-6  shadow-2xl">
         {/* Logo */}
         <Image src={HAlogo} alt="logo" width={40} height={120} className="ml-10" />
 
