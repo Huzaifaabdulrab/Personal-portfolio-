@@ -1,9 +1,9 @@
 'use client'
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 import WebDevelop from "../public/Images/Web-development.jpg";
-import Hackhathon from "../public/Images/hackhathon.png"
+import Hackhathon from "../public/Images/hackhathon.png";
 import Cli from "../public/Images/Cli.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,7 +11,11 @@ import { useEffect } from "react";
 
 export default function Project() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false, 
+    });
   }, []);
 
   type project = {
@@ -20,7 +24,7 @@ export default function Project() {
     name: string;
     description: string;
     icon: JSX.Element;
-    url: string; 
+    url: string;
     animation: string;
   };
 
@@ -57,7 +61,7 @@ export default function Project() {
   ];
 
   return (
-    <div id="Project" className="py-40 ml-8 mt-[-8%]">
+    <div id="Project" className="py-40 ml-8 mt-[-8%] overflow-hidden">
       <div className="mx-auto px-4 md:px-16">
         <h1
           className="text-[#091057] text-4xl font-bold mr-10 text-center pb-10"
@@ -69,10 +73,8 @@ export default function Project() {
           {projectList.map((list) => (
             <div
               key={list.id}
-              className="w-full sm:w-64 md:w-80 lg:w-[25.5rem] h-auto md:h-[31rem] border border-[#091057] mx-4 my-6 p-4 flex flex-col items-center rounded-lg"
-              style={{
-                boxShadow: "0 8px 20px rgba(9, 16, 87, 0.35)",
-              }}
+              className="w-full sm:w-64 md:w-80 lg:w-[25.5rem] h-auto border border-[#091057] mx-4 my-6 p-4 flex flex-col items-center rounded-lg"
+              style={{ boxShadow: "0 8px 20px rgba(9, 16, 87, 0.35)" }}
               data-aos={list.animation}
             >
               <div className="w-full flex justify-center rounded-full">
@@ -81,6 +83,7 @@ export default function Project() {
                   alt={list.name}
                   width={400}
                   height={200}
+                  className="object-cover rounded-lg"
                 />
               </div>
               <h2 className="text-[#091057] text-2xl md:text-3xl text-center py-4">
@@ -91,7 +94,7 @@ export default function Project() {
               </p>
               <div className="text-3xl pt-4">{list.icon}</div>
               <Link href={list.url}>
-                <button className="bg-[#091057] text-white w-28 p-2 mt-6">
+                <button className="bg-[#091057] text-white w-28 p-2 mt-6 hover:bg-[#0a0f87] transition-all duration-300">
                   Click me
                 </button>
               </Link>
