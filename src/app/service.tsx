@@ -1,5 +1,5 @@
 'use client'
-import { FaHtml5, FaCss3, FaJs, FaGithub, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs,  FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
 import { useEffect } from "react";

@@ -5,7 +5,7 @@ import {
   FaEnvelope,
   FaUser,
   FaCode,
-  FaPaintBrush,
+  // FaPaintBrush,
   FaProjectDiagram,
   FaRobot,
 } from "react-icons/fa";

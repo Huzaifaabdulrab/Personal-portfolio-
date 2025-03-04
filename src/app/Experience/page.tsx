@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import logo from "../../public/Images/sklogo.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { StaticImageData } from "next/image";
 
 interface BlogData {
     date: string;
@@ -10,7 +11,7 @@ interface BlogData {
     title: string;
     description: string;
     author: string;
-    image: any;
+    image: StaticImageData
     stack?: string[];
     animation: string;
 }
