@@ -1,8 +1,21 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link"; // Import Link from Next.js
+import PythonProject from "./python";
 
 const projects = [
     {
+        name: "Market Place Builder",
+        description: "A dynamic marketplace platform built with Next.js, TypeScript, and Tailwind CSS, featuring Sanity CMS for content management.",
+        github: "https://github.com/Huzaifaabdulrab/Market-place-builder-hackathon",
+        vercel: "https://market-place-builder-hackathon-ddy1.vercel.app/"
+    },
+    {
+        name: "E-Commerce Website",
+        description: "A modern and fully responsive e-commerce platform built using React, Vite, Tailwind CSS, and Bootstrap.",
+        github: "https://github.com/Huzaifaabdulrab/SkyMart",
+        vercel: "https://skymartweb.netlify.app"
+    }
+    ,{
         name: "Resume Builder",
         description: "Built with HTML, CSS3, TypeScript, and JavaScript. Includes PDF download.",
         github: "https://github.com/Huzaifaabdulrab/Hackathon-project-2",
@@ -76,6 +89,8 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
+    <PythonProject/>
         </div>
+    
     );
 }

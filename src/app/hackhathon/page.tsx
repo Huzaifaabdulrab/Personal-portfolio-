@@ -23,6 +23,12 @@ export default function Hackhathon() {
             github: "https://github.com/Huzaifaabdulrab/Hackathon-project-2",
             vercel: "https://hackathon-project-2-gaeh-imyk7swyp-huzaifaabdulrabs-projects.vercel.app/"
         },
+        {
+            name: "Market Place Builder",
+            description: "A dynamic marketplace platform built with Next.js, TypeScript, and Tailwind CSS, featuring Sanity CMS for content management.",
+            github: "https://github.com/Huzaifaabdulrab/Market-place-builder-hackathon",
+            vercel: "https://market-place-builder-hackathon-ddy1.vercel.app/"
+        },
     ];
 
     return (

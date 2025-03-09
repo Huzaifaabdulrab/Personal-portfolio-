@@ -8,6 +8,7 @@ import {
   // FaPaintBrush,
   FaProjectDiagram,
   FaRobot,
+  FaPaintBrush,
 } from "react-icons/fa";
 
 export default function About() {
@@ -28,11 +29,10 @@ export default function About() {
             About Me
           </h1>
           <p className="text-[#8b8585] mb-4">
-            Hii, I am <span className="font-semibold">Huzaifa Abdulrab</span>. I
-            apply my expertise in HTML, CSS, JavaScript, and TypeScript to
-            create dynamic, responsive, and <br /> user-friendly web
-            applications.
-          </p>
+  Hi, I’m <span className="font-semibold">Huzaifa Abdulrab</span>, a passionate Frontend Developer specializing in crafting modern, responsive, and high-performance web applications. With expertise in <span className="font-semibold">HTML, CSS, JavaScript, TypeScript, Next.js, React, Tailwind CSS, Bootstrap, and GitHub</span>, I build seamless, user-friendly digital experiences that prioritize performance, accessibility, and aesthetics. I excel at turning creative concepts into functional solutions, continuously learning and evolving to stay at the forefront of web development.
+</p>
+
+
           <hr />
           <div className="mb-4 mt-4 justify-center">
           <p className="flex items-center justify-center mt-5 mb-3">
@@ -56,16 +56,25 @@ export default function About() {
           <hr />
           <h1 className="text-xl font-semibold  text-[#091057] mb-5 pt-5">
             My Interests
-          </h1>
-          <p className="flex items-center justify-center  ">
-            <FaCode className="mr-2 text-[#091057] " />    <p className="text-[#33343f] ">Coding</p>
-            {/* <FaPaintBrush className="mx-2 text-[#091057]" />
-            <p className="text-[#33343f] ">Painting</p> */}
-            <FaProjectDiagram className="mx-2 text-[#091057]" />
-            <p className="text-[#33343f] ">Project</p>
-            <FaRobot className="mx-2 text-[#091057]" />
-            <p className="text-[#33343f] ">Ai</p>
-          </p>
+          </h1><div className="flex items-center justify-center gap-4 flex-wrap">
+  <div className="flex items-center">
+    <FaCode className="mr-2 text-[#091057]" />
+    <p className="text-[#33343f]">Web Development</p>
+  </div>
+  <div className="flex items-center">
+    <FaProjectDiagram className="mr-2 text-[#091057]" />
+    <p className="text-[#33343f]">Project Management</p>
+  </div>
+  <div className="flex items-center">
+    <FaRobot className="mr-2 text-[#091057]" />
+    <p className="text-[#33343f]">AI & Automation</p>
+  </div>
+  <div className="flex items-center">
+    <FaPaintBrush className="mr-2 text-[#091057]" />
+    <p className="text-[#33343f]">UI/UX Design</p>
+  </div>
+</div>
+
         </div>
       </div>
     </>

@@ -3,9 +3,11 @@ import SocialIcon from "./Socialicons";
 import Image from "next/image";
 import portfolio from "../public/Images/portfolio.png";
 import { Button } from "@/components/ui/button";
+// import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Screen() {
   return (
+    <>
     <div id="Screen" className="bg-[#e3e3e3] flex flex-col md:flex-row pt-12">
       <div className="text-white mt-24 ml-14 font-bold md:w-1/2">
         <h3
@@ -30,9 +32,7 @@ export default function Screen() {
           className="text-1xl text-[#8b8585] pt-3"
           style={{ textShadow: "1px 1px 2px rgba(255, 255, 255, 0.8)" }}
         >
-          To apply my expertise in HTML, CSS, JavaScript, and <br />
-          TypeScript to create dynamic, responsive, and <br /> user-friendly
-          web applications.
+         I am a frontend developer with expertise in HTML, CSS, JavaScript, TypeScript, Next.js, and Tailwind CSS. I specialize in building dynamic, responsive, and high-performance web applications that prioritize seamless user experiences and modern aesthetics.
         </p>
         <br /><Button
                 
@@ -63,8 +63,10 @@ export default function Screen() {
           className="rounded-md w-full max-w-xs" // Responsive width
         />
       </div>
-      <SocialIcon />
+      {/* <SocialIcon /> */}
     </div>
+    <SocialIcon/>
+    </>
   );
 }
 
