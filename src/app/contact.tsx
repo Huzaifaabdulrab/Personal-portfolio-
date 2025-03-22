@@ -2,8 +2,6 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
-
-
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -23,7 +21,7 @@ export default function Contact() {
             alert("Message sent successfully!");
             formRef.current?.reset();
           },
-          (error:string) => {
+          (error) => {
             console.error("Failed to send email:", error);
             alert("Failed to send message. Please try again.");
           }
