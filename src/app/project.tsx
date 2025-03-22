@@ -1,6 +1,5 @@
 'use client'
-import { FaArrowAltCircleDown } from "react-icons/fa";
-import Image, { StaticImageData } from "next/image";
+import Image  from "next/image";
 import Link from "next/link"; 
 import WebDevelop from "../public/Images/Web-development.jpg";
 import Hackhathon from "../public/Images/hackhathon.png";
