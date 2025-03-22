@@ -57,8 +57,12 @@ export default function Footer() {
             <Link href="mailto:huzaifaabdulrab2@gmail.com"><li className="hover:text-[#4a4a4a]"><FaEnvelope /></li></Link>
             <Link href="https://www.linkedin.com/in/huzaifa-abdulrab/"><li className="hover:text-[#4a4a4a]"><FaLinkedin /></li></Link>
           </ul>
+          
         </div>
+        
       </div>
+      
+    
     </>
   );
 }

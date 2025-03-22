@@ -11,40 +11,25 @@ import { useEffect } from "react";
 
 export default function Project() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      mirror: false, 
-    });
+    AOS.init({ duration: 1000, once: true, mirror: false });
   }, []);
 
-  type project = {
-    id: number;
-    image: StaticImageData;
-    name: string;
-    description: string;
-    icon: JSX.Element;
-    url: string;
-    animation: string;
-  };
-
-  const projectList: project[] = [
+  const projectList = [
     {
       id: 1,
       image: WebDevelop,
-      name: "Web-Development",
+      name: "Web Development",
       description:
         "A collection of my web development projects using HTML, CSS, JavaScript, and TypeScript.",
-      icon: <FaArrowAltCircleDown className="text-[#091057]" />,
       url: "/WebProject",
       animation: "fade-up",
     },
     {
       id: 2,
       image: Hackhathon,
-      name: "Hackhathon Projects",
-      description: "Conversion of modern Figma UI designs into responsive websites using Tailwind CSS, HTML, and Next.js.",
-      icon: <FaArrowAltCircleDown className="text-[#091057]" />,
+      name: "Hackathon Projects",
+      description:
+        "Modern UI designs converted into responsive websites using Tailwind CSS, HTML, and Next.js.",
       url: "/hackhathon",
       animation: "fade-left",
     },
@@ -53,54 +38,52 @@ export default function Project() {
       image: Cli,
       name: "CLI Tools",
       description:
-        "A suite of command-line tools developed in TypeScript for improving productivity and efficiency work for TypeScript.",
-      icon: <FaArrowAltCircleDown className="text-[#091057]" />,
+        "A suite of command-line tools developed in TypeScript for improving productivity.",
       url: "/CLI",
       animation: "fade-right",
     },
   ];
 
   return (
-    <div id="Project" className="py-40 ml-8 mt-[-8%] overflow-hidden">
-      <div className="mx-auto px-4 md:px-16">
-        <h1
-          className="text-[#091057] text-4xl font-bold mr-10 text-center pb-10"
-          style={{ textShadow: "2px 2px 4px #091057" }}
-        >
-          Project
+    <div id="Project" className="py-20 overflow-hidden">
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold text-[#091057]" data-aos="zoom-in">
+          My Projects
         </h1>
-        <div className="flex flex-wrap w-full justify-center -mx-4">
-          {projectList.map((list) => (
-            <div
-              key={list.id}
-              className="w-full sm:w-64 md:w-80 lg:w-[25.5rem] h-auto border border-[#091057] mx-4 my-6 p-4 flex flex-col items-center rounded-lg"
-              style={{ boxShadow: "0 8px 20px rgba(9, 16, 87, 0.35)" }}
-              data-aos={list.animation}
-            >
-              <div className="w-full flex justify-center rounded-full">
-                <Image
-                  src={list.image}
-                  alt={list.name}
-                  width={400}
-                  height={200}
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <h2 className="text-[#091057] text-2xl md:text-3xl text-center py-4">
+        <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up">
+          Explore my latest work in web development, UI/UX, and CLI tools.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-16">
+        {projectList.map((list) => (
+          <div
+            key={list.id}
+            className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 "
+            data-aos={list.animation}
+          >
+            <Image
+              src={list.image}
+              alt={list.name}
+              width={400}
+              height={250}
+              className="w-full h-60 object-cover"
+            />
+            <div className="p-6 text-center">
+              <h2 className="text-2xl font-semibold text-[#091057]">
                 {list.name}
               </h2>
-              <p className="text-[#8b8585] text-center px-4 text-base md:text-[1.2rem]">
+              <p className="text-gray-500 text-base mt-2">
                 {list.description}
               </p>
-              <div className="text-3xl pt-4">{list.icon}</div>
               <Link href={list.url}>
-                <button className="bg-[#091057] text-white w-28 p-2 mt-6 hover:bg-[#0a0f87] transition-all duration-300">
-                  Click me
+                <button className="mt-4 px-6 py-2 bg-[#091057] text-white rounded-full hover:bg-[#0a0f87] transition-all duration-300">
+                  View Project
                 </button>
               </Link>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

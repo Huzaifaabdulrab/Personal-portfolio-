@@ -6,90 +6,45 @@ import { BiLogoTypescript } from "react-icons/bi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { IoLogoSass } from "react-icons/io";
 
 export default function SkillsArea() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    AOS.refresh(); // Yeh line important hai!
+    AOS.refresh();
   }, []);
-  
+
+  const skills = [
+    { name: "HTML", icon: <FaHtml5 className='text-orange-600' size={50} /> },
+    { name: "CSS", icon: <FaCss3 className='text-blue-600' size={50} /> },
+    { name: "JavaScript", icon: <FaJs className='text-yellow-500' size={50} /> },
+    { name: "TypeScript", icon: <BiLogoTypescript className='text-blue-400' size={50} /> },
+    { name: "Tailwind CSS", icon: <RiTailwindCssFill className='text-teal-400' size={50} /> },
+    { name: "Next.js", icon: <RiNextjsFill className='text-black' size={50} /> },
+    { name: "React", icon: <FaReact className='text-blue-400' size={50} /> },
+    { name: "Sanity", icon: <SiSanity className='text-red-500' size={50} /> },
+    { name: "GitHub", icon: <FaGithub className='text-gray-700' size={50} /> },
+    { name: "UI & UX", icon: <FaFigma className='text-purple-500' size={50} /> },
+    { name: "Scss", icon: <IoLogoSass className='text-[#b37399aa]' size={50} /> },
+    
+  ];
+
   return (
-    <div id="Skills" className="flex flex-col w-full pb-20  mt-24 text-[1.2rem]">
-
-      <hr />
-      <hr />
-
-      <h1 className="text-[#091057] font-bold text-4xl text-center pt-10 mt-14">Skills</h1>
-      <div className="flex flex-wrap justify-center mt-16 ">
-        {[{
-          name: "HTML",
-          icon: <FaHtml5 />,
-          percentage: "90%",
-          width: "90%",
-        }, {
-          name: "CSS",
-          icon: <FaCss3 />,
-          percentage: "70%",
-          width: "70%",
-        }, {
-          name: "JavaScript",
-          icon: <FaJs />,
-          percentage: "60%",
-          width: "60%",
-        }, {
-          name: "TypeScript",
-          icon: <BiLogoTypescript />,
-          percentage: "80%",
-          width: "80%",
-        }, {
-          name: "Tailwind CSS",
-          icon: < RiTailwindCssFill />,
-          percentage: "60%",
-          width: "60%",
-        },
-        {
-          name: "Next.js",
-          icon: <RiNextjsFill />,
-          percentage: "70%",
-          width: "70%"
-        }
-          ,
-        {
-          name: "React",
-          icon: <FaReact />,
-          percentage: "50%",
-          width: "50%"
-        }
-          , {
-          name: "Sanity",
-          icon: <SiSanity />,
-          percentage: "60%",
-          width: "65%",
-        }, {
-          name: "GitHub",
-          icon: <FaGithub />,
-          percentage: "65%",
-          width: "65%",
-        }, {
-          name: "UI & UX",
-          icon: <FaFigma />,
-          percentage: "50%",
-          width: "50%",
-        },
-        ].map(({ name, icon, percentage, width }, index) => (
-          <div key={index} className="flex flex-wrap items-center w-full sm:w-1/2 lg:w-2/4 px-7 mt-4" data-aos="fade-up">
-            <p className="flex  ml-5 text-[#091057] font-bold flex-grow">
-              {name} <span className="text-2xl pl-2">{icon}</span>
-            </p>
-            <span className="text-[#091057] font-bold ml-4">{percentage}</span>
-            <div className="skills-box flex w-full h-3 rounded-xl bg-[#8b8585]  ml-4 shadow-lg"
-              style={{ boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3), 0 8px 20px rgba(0, 0, 0, 10)" }}
-            >
-              <div className={`rounded-xl bg-[#135e94]`} style={{ width }} />
-            </div>
-          </div>
-        ))}
+    <>
+<div id="Skills" className="flex flex-col items-center  w-full pb-20 mt-24 text-center">
+      <h1 className="text-[#091057] font-bold text-4xl pt-10 mt-14">Skills</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5  gap-10 mt-16 px-5">
+        {skills.map(({ name, icon }, index) => (
+      <div 
+      key={index} 
+      data-aos="fade-right"
+      className="flex flex-col items-center p-4 bg-white shadow-lg rounded-xl transition-transform duration-300 hover:-translate-y-2" 
+    >
+      {icon}
+      <p className="mt-2 text-lg font-semibold text-[#091057]">{name}</p>
+    </div>
+      ))}
       </div>
     </div>
-  );
+    </>);
 }
