@@ -46,7 +46,7 @@ export default function Project() {
   return (
     <div id="Project" className="py-20 overflow-hidden">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-[#091057]" data-aos="zoom-in">
+        <h1 className="text-4xl font-bold text-[#091057]" data-aos="zoom-in">
           My Projects
         </h1>
         <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up">
