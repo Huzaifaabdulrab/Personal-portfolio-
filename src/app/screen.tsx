@@ -1,8 +1,9 @@
 import Link from "next/link";
 import SocialIcon from "./Socialicons";
-import Image from "next/image";
-import portfolio from "../public/Images/portfolio.png";
+// import Image from "next/image";
+// import portfolio from "../public/Images/portfolio.png";
 import { Button } from "@/components/ui/button";
+import SplineItem from "./spline";
 // import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Screen() {
@@ -54,14 +55,15 @@ export default function Screen() {
 </Button>
       </div>
 
-      <div className="flex justify-center items-center lg:ml-16 w-full md:w-1/2 m-auto">
-        <Image
+      <div className="flex justify-center overflow-hidden lg:-mb-10  items-center w-full md:w-1/2 m-auto">
+        {/* <Image
           src={portfolio}
           alt="Huzaifa Abdulrab image"
           width={350}
           height={400}
           className="rounded-md w-full max-w-xs" // Responsive width
-        />
+        /> */}
+        <SplineItem/>
       </div>
       {/* <SocialIcon /> */}
     </div>

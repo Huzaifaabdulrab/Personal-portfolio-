@@ -258,3 +258,6 @@ html{
     opacity: 0;
   }
 }
+.spline-branding {
+  display: none !important;
+}
