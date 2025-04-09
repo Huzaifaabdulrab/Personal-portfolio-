@@ -1,15 +1,12 @@
 import Link from "next/link";
 import SocialIcon from "./Socialicons";
-// import Image from "next/image";
-// import portfolio from "../public/Images/portfolio.png";
 import { Button } from "@/components/ui/button";
-import SplineItem from "./spline";
-// import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
+import Image from "next/image";
+import myImage from '../public/Images/myImage.png'
 export default function Screen() {
   return (
     <>
-    <div id="Screen" className="bg-[#e3e3e3] flex flex-col md:flex-row pt-12">
+    <div id="Screen" className="bg-[#fff] flex flex-col md:flex-row pt-12">
       <div className="text-white mt-24 ml-14 font-bold md:w-1/2">
         <h3
           className="text-[#135e94] text-2xl font-sans"
@@ -55,21 +52,20 @@ export default function Screen() {
 </Button>
       </div>
 
-      <div className="flex justify-center overflow-hidden lg:-mb-10  items-center w-full md:w-1/2 m-auto">
-        {/* <Image
-          src={portfolio}
+      <div className="flex justify-center overflow-hidden   items-center w-full md:w-1/2 m-auto">
+        <Image
+          src={myImage}
           alt="Huzaifa Abdulrab image"
-          width={350}
+          width={500}
           height={400}
           className="rounded-md w-full max-w-xs" // Responsive width
-        /> */}
-        <SplineItem/>
+        />
+        {/* <SplineItem/> */}
       </div>
       {/* <SocialIcon /> */}
     </div>
+    <hr />
     <SocialIcon/>
     </>
   );
 }
-
-

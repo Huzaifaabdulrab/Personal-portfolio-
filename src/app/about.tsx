@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PortfolioImg from "../public/Images/portfolio.png";
+import PortfolioImg from "../public/Images/myImage.png";
 import {
   FaPhone,
   FaEnvelope,
@@ -19,7 +19,7 @@ export default function About() {
           src={PortfolioImg}
           alt="Huzaifa Abdulrab Image"
           height={350}
-          className="rounded-lg shadow-lg"
+          className="rounded-lg "
         />
         <div className="aboutSec text-center w-full max-w-md md:ml-10 lg:max-w-lg mt-8 lg:mt-10 lg:ml-10 lg:mr-28">
           <h2 className="text-[#135e94] text-2xl font-semibold pb-3">
