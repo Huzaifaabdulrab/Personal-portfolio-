@@ -58,12 +58,10 @@ export default function Screen() {
           alt="Huzaifa Abdulrab image"
           width={500}
           height={400}
-          className="rounded-md w-full max-w-xs" // Responsive width
+          className="rounded-md w-full max-w-xs" 
         />
-        {/* <SplineItem/> */}
       </div>
-      {/* <SocialIcon /> */}
-    </div>
+     </div>
     <hr />
     <SocialIcon/>
     </>
