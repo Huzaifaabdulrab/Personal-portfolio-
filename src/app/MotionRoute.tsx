@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { GiThreeLeaves } from "react-icons/gi";
 
 export default function MotionLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
