@@ -38,7 +38,7 @@ export default function SkillsArea() {
       <div 
       key={index} 
       data-aos="fade-right"
-      className="flex flex-col items-center p-4 bg-white shadow-lg rounded-xl transition-transform duration-300 hover:-translate-y-2" 
+      className="flex flex-col items-center p-4 bg-white shadow-lg rounded-xl transition-transform duration-300 hover:-translate-y-2 hover:border hover:border-[#091057] hover:shadow-inner  hover:transition-all " 
     >
       {icon}
       <p className="mt-2 text-lg font-semibold text-[#091057]">{name}</p>

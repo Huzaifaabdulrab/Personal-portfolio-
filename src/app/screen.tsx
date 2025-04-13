@@ -38,7 +38,7 @@ export default function Screen() {
   className="bg-[#135e94] hover:bg-[#135e94] mr-2 mt-7 mb-4 md:inline hover:!text-white sm:mt-1 w-32 rounded-xl" // Add rounded-md here
   style={{ boxShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)" }}
 >   
-  <a href={"/cv.pdf"} download >Download CV</a>
+  <a href={"public/myResume.pdf"} download >Download CV</a>
 
 
 </Button>
